@@ -1,0 +1,30 @@
+.contact{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .contact{
+    flex-direction: row;
+  }
+}
+
+.contact-left, .contact-right  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (min-width: 768px) {
+  .contact-left, .contact-right{
+    width: 40%;
+  }
+}
+
+
+.contact-link {
+  color: #fff
+}

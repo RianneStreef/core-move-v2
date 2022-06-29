@@ -1,0 +1,10 @@
+.maxime {
+  width: 80% !important;
+}
+
+@media (min-width: 1200px) {
+  .maxime {
+    width: 50% !important;
+  }
+}
+

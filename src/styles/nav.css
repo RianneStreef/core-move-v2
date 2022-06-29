@@ -1,0 +1,9 @@
+
+@media (min-width: 768px) {
+  .menu-item {
+    margin: auto !important;
+    min-width: 90px;  
+  }
+}
+
+

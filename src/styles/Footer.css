@@ -1,3 +1,22 @@
 .footer {
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.contact-footer {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+
+}
+
+.contact-footer a{
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.contact-icon {
+  margin: 0 10px;
 }

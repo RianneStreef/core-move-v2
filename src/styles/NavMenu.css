@@ -1,0 +1,19 @@
+.nav-menu-container {
+  color: var(--color-dark);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.nav-menu-item {
+  margin: 0 20px;
+}
+
+.nav-menu-item a:link,
+.nav-menu-item a:visited {
+  color: var(--color-dark);
+}
+

@@ -1,0 +1,57 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+  .intro{
+    flex-direction: row;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .intro-mama {
+    flex-direction: column-reverse;
+  }
+}
+
+.intro-paragraph {
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .intro-paragraph{
+  margin: 80px;
+  }
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .intro-text{
+    width: 50%;
+    padding: 20px;  
+  }
+}
+
+.intro-img {
+  margin: auto;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .intro-img{
+    width: 50%;
+  }
+}
+
+img {
+  width: 100%;
+}

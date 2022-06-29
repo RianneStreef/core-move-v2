@@ -1,0 +1,21 @@
+.copyright {
+  text-align: center;
+  font-size: 0.6em;
+  background-color: var(--color-light);
+  color: var(--color-dark)
+}
+
+.fa-copyright {
+  font-size: 0.5em;
+}
+
+.rs {
+  font-size: 0.8em;
+}
+
+.rs a, .legal a {
+  color: var(--color-dark);
+}
+
+
+
