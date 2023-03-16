@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout.jsx";
+
+import Reviews from "../components/Reviews.jsx";
+import PopUp from "../components/PopUp";
 
 import "../styles/index.css";
 
@@ -11,6 +14,12 @@ import mama from "../images/intro-mama.jpeg";
 import work from "../images/intro-werk.jpeg";
 
 const IndexPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handlePopUp = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <Helmet>
@@ -49,7 +58,7 @@ const IndexPage = () => {
               heeft.
             </p>
           </div>
-          <div className="intro intro-base">
+          <div className="intro intro-base" id="base">
             <div className="intro-img">
               <img src={base} alt="base" />
             </div>
@@ -65,13 +74,17 @@ const IndexPage = () => {
                 verandering.
               </p>
               <div className="button-container">
-                <Link to="/base/" className="button">
+                <button
+                  to="/base/"
+                  className="button"
+                  onClick={() => handlePopUp(true)}
+                >
                   Learn more
-                </Link>
+                </button>
               </div>
             </div>
           </div>
-          <div className="intro intro-mama">
+          <div className="intro intro-mama" id="mama">
             <div className="intro-text">
               <h3>core • mama</h3>
               <h4>Rebuild core & pelvic floor</h4>
@@ -90,7 +103,7 @@ const IndexPage = () => {
               <img src={mama} alt="mama" />
             </div>
           </div>
-          <div className="intro intro-work">
+          <div className="intro intro-work" id="work">
             <div className="intro-img">
               <img src={work} alt="work" />
             </div>
@@ -113,6 +126,14 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
+          <Reviews />
+          {isOpen && (
+            <PopUp
+              open={open}
+              setIsOpen={setIsOpen}
+              handlePopUp={handlePopUp}
+            />
+          )}
         </div>
       </Layout>
     </>

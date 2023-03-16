@@ -73,21 +73,21 @@ const RightNav = (props) => {
   return (
     <Ul open={open}>
       <li className="menu-item">
-        <Link to="/base" onClick={() => setOpen(!open)}>
+        <Link to="/#base" onClick={() => setOpen(!open)}>
           base
         </Link>
       </li>
       <Dot className="dot">&#8226;</Dot>
 
       <li className="menu-item">
-        <Link to="/mama" onClick={() => setOpen(!open)}>
+        <Link to="/#mama" onClick={() => setOpen(!open)}>
           mama
         </Link>
       </li>
       <Dot className="dot">&#8226;</Dot>
 
       <li className="menu-item">
-        <Link to="/work" onClick={() => setOpen(!open)}>
+        <Link to="/#work" onClick={() => setOpen(!open)}>
           work
         </Link>
       </li>

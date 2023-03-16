@@ -9,20 +9,29 @@
 }
 
 @media (min-width: 768px) {
-  .content{
-  padding: 20px 60px;
+  .content {
+    padding: 20px 60px;
   }
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: var(--color-dark);
+  color: var(--color-light);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--color-light) !important;
 }
 
-h1, h2, h3, h4, p {
+.content {
+  background-color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
   text-align: center;
 }
 
@@ -37,7 +46,7 @@ h3 {
 
 h4 {
   font-size: 1.2em;
-  color: var(--color-highlight)
+  color: var(--color-highlight);
 }
 
 p {
@@ -71,19 +80,20 @@ li {
 }
 
 @media (min-width: 768px) {
-  .detail-info{
- flex-direction: row;
+  .detail-info {
+    flex-direction: row;
   }
 }
 
 .detail-text {
-  width: 90%; 
+  width: 90%;
   padding: 20px;
 }
 
 @media (min-width: 768px) {
-  .detail-text{
-    width: 50%;   }
+  .detail-text {
+    width: 50%;
+  }
 }
 
 .detail-img-div {
@@ -95,10 +105,10 @@ li {
 }
 
 @media (min-width: 768px) {
-  .detail-img-div{
-    width: 50%;   }
+  .detail-img-div {
+    width: 50%;
+  }
 }
-
 
 .padding {
   padding: 20px;
@@ -108,17 +118,16 @@ a.button {
   max-width: 100px;
 }
 
-input, textarea {
+input,
+textarea {
   border: solid 2px var(--color-highlight);
   border-radius: 5px;
   color: #000;
   width: 100%;
 }
 
-
-
 ::placeholder {
-  color:var(--color-highlight);
+  color: var(--color-highlight);
   opacity: 1;
 }
 
