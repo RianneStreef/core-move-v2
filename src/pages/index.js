@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout.jsx";
 
+import Reviews from "../components/Reviews.jsx";
+
 import "../styles/index.css";
 
 import base from "../images/intro-core.jpeg";
@@ -113,6 +115,7 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
+          <Reviews />
         </div>
       </Layout>
     </>
